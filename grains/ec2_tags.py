@@ -54,6 +54,9 @@ import boto.ec2
 import boto.utils
 import salt.log
 
+logging.getLogger('boto').setLevel(logging.CRITICAL)
+
+
 log = logging.getLogger(__name__)
 
 AWS_CREDENTIALS = {
